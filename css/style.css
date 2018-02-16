@@ -8,7 +8,8 @@ body {
 }
 
 .container {
-    margin: 5% 30%;
+    width: 100%;
+    height: 1000px;
     background-color: #dadada;
 }
 
@@ -27,12 +28,29 @@ h1 {
     font-size: 2em;
 }
 
-@media screen and (min-width: 1199px) {
-.preview {
+div {
     width: 100%;
-    height: 400px;
+    height: 250px;
+    margin: 2%;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    float: left;
+}
+
+
+/* code added to create two-column design */
+@media screen and (min-width: 575px) {
+    div {
+     margin: 1%;
+     width: 48%;
+    }
+}
+
+/* code added to create four-column design */
+@media screen and (min-width: 911px) {
+    div {
+     margin: 1%;
+     width: 23%;
     }
 }
 
